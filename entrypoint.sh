@@ -5,8 +5,9 @@
 #  echo -e "$KEY_PEM"  > key.pem
 #fi
 
-cd /v2ray
-wget -O v2ray.zip http://github.com/v2ray/v2ray-core/releases/download/v$VER/v2ray-linux-64.zip
+cd /ct
+wget -O http://github.com/jpillora/cloud-torrent/releases/download/$VER/cloud-torrent_linux_amd64.gz
+
 unzip v2ray.zip 
 if [ ! -f "v2ray" ]; then
   mv /v2ray/v2ray-v$VER-linux-64/v2ray .
