@@ -1,5 +1,5 @@
 FROM alpine:latest
-
+ENV VER = 0.8.25
 RUN mkdir -m 777 /ct
 
 ADD entrypoint.sh /entrypoint.sh
