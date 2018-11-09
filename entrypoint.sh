@@ -1,3 +1,2 @@
 cd /ct
-
-./ct --port 8080
+./ct --port 8080 --log
