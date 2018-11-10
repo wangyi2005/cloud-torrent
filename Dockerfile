@@ -2,7 +2,8 @@
 FROM ubuntu:18.10
 ENV VER=0.8.25
 #RUN apk add --no-cache --virtual .build-deps ca-certificates &&\
-RUN mkdir -m 777 /ct &&\
+RUN apk add ca-certificate wget &&\
+    mkdir -m 777 /ct &&\
     cd /ct &&\
     wget -O ct.gz http://github.com/jpillora/cloud-torrent/releases/download/$VER/cloud-torrent_linux_amd64.gz &&\
     gzip -d ct.gz &&\
