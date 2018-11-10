@@ -1,5 +1,5 @@
 #FROM alpine:latest
-FROM ubuntu:18.10
+FROM ubuntu:16.04
 ENV VER=0.8.25
 #RUN apk add --no-cache --virtual .build-deps ca-certificates &&\
 RUN apt-get install  wget &&\
